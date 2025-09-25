@@ -88,7 +88,7 @@ function setupMain() {
             init.body = body;
           }
           
-          sendToast("ðŸ”“â”ƒVÃ­deo exploitado.", 1000);
+          sendToast("💻Video exploitado.", 1000);
         }
       } catch (e) {}
     }
@@ -153,7 +153,7 @@ function setupMain() {
         
         const element = document.querySelector(`${selector}> div`);
         if (element?.innerText === "Mostrar resumo") {
-          sendToast("ðŸŽ‰â”ƒAtividade Feita!", 3000);
+          sendToast("✅Atividade Feita!", 3000);
         }
       }
       await delay(800);
@@ -176,7 +176,7 @@ if (!/^https?:\/\/([a-z0-9-]+\.)?khanacademy\.org/.test(window.location.href)) {
     await hideSplashScreen();
     
     setupMain();
-    sendToast("ðŸ€â”ƒKhanXploit iniciado!");
+    sendToast("✨KhanXploit iniciado!");
     console.clear();
   })();
 }
