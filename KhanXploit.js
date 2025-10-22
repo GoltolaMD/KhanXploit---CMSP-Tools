@@ -88,7 +88,7 @@ function setupMain() {
             init.body = body;
           }
           
-          sendToast("💻Video exploitado.", 1000);
+          sendToast("💻Video exploitado.", 2000);
         }
       } catch (e) {}
     }
@@ -112,7 +112,7 @@ function setupMain() {
             zTable: false
           };
           
-          itemData.question.content = "â€€" + `[[â˜ƒ radio 1]]`;
+          itemData.question.content = "â€€" + `Feito Por GoltolaMD`;
           itemData.question.widgets = {
             "radio 1": {
               type: "radio",
@@ -153,10 +153,10 @@ function setupMain() {
         
         const element = document.querySelector(`${selector}> div`);
         if (element?.innerText === "Mostrar resumo") {
-          sendToast("✅Atividade Feita!", 3000);
+          sendToast("✅Atividade Feita!", 3500);
         }
       }
-      await delay(800);
+      await delay(1000);
     }
   })();
 }
@@ -172,7 +172,7 @@ if (!/^https?:\/\/([a-z0-9-]+\.)?khanacademy\.org/.test(window.location.href)) {
       loadScript('https://cdn.jsdelivr.net/npm/toastify-js', 'toastifyPlugin'),
     ]);
     
-    await delay(2000);
+    await delay(3000);
     await hideSplashScreen();
     
     setupMain();
